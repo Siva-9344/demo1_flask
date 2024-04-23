@@ -11,6 +11,15 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/rosemonkey/api/address.hari')
+def address():
+    return render_template("address.html")
+
+
+@app.route('/rosemonkey/api/contact')
+def contact():
+    return render_template("contact.html")
+
 
 
 @app.route('/rosemonkey/api/signup') # create the another api
